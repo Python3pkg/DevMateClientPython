@@ -2,11 +2,13 @@
 
 This is a simple [DevMate](http://devmate.com/) [Public API](https://docs.devmate.com/docs/api) client written in Python.
 
-* [Getting Started](#getting-started)
+* [Installation](#installation)
 * [Usage Example](#usage-example)
 
-## Getting Started
-TODO
+## Installation
+The latest stable version is always available on PyPi.
+
+    pip install devmateclient
 
 ## Usage Example
 
