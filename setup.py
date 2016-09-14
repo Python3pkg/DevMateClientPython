@@ -13,9 +13,6 @@ requirements = [
 version = None
 exec(open('devmateclient/version.py').read())
 
-with open('./test_requirements.txt') as test_reqs_txt:
-    test_requirements = [line for line in test_reqs_txt]
-
 setup(
     name='devmateclient',
     version=version,
@@ -29,8 +26,6 @@ setup(
         'devmateclient.api'
     ],
     install_requires=requirements,
-    tests_require=test_requirements,
-    test_suite='tests',
     keywords=['devmate', 'api', 'client'],
     classifiers=[
         'Development Status :: 4 - Beta',
