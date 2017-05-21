@@ -77,7 +77,7 @@ class CustomersApiMixin(object):
 
         log.debug('Get customers with params %s, with meta : %s', params, with_meta)
 
-        not_none_params = dict((k, v) for k, v in params.items() if v is not None)
+        not_none_params = dict((k, v) for k, v in list(params.items()) if v is not None)
 
         return self._dm_get(path=PATH, params=not_none_params, with_meta=with_meta)
 
